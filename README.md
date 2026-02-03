@@ -2,7 +2,13 @@
 
 A quick demonstration of using AI agents with GitHub Copilot for automated resume screening in biomedical research hiring.
 
-## Setup Time: ~2 minutes
+&emsp;&emsp;&emsp;&emsp;Click here ➡️ 
+<a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/skilldevai/rescore">
+  <img src="https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&style=for-the-badge"
+       alt="Open in Dev Containers" height="48">    
+</a>     
+
+<br>
 
 ## Files Included
 
@@ -47,15 +53,15 @@ screen_resumes.py → Extract PDF text → Call Claude API → Save evaluation r
 
 ---
 
-## Demo Flow (5-10 minutes)
 
-### 1. Show the Structure (1 min)
-- Open `AGENTS.md` - explain this defines the agent's task and workflow
-- Open `skills/resume-scoring.md` - show the transparent scoring rubric
-- Open a sample PDF to show realistic resume format
+
+### 1.The Structure 
+- `AGENTS.md` - defines the agent's task and workflow
+- `skills/resume-scoring.md` - contains the transparent scoring rubric
+- sample PDFs - to show realistic resume format
 - Key point: **Criteria are auditable and adjustable by non-technical stakeholders**
 
-### 2. Run the Agent (3-5 min)
+### 2. Runing the Agent (3-5 min)
 In GitHub Copilot Chat (Agent mode):
 
 ```
@@ -63,13 +69,13 @@ In GitHub Copilot Chat (Agent mode):
 using the scoring rubric in skills/resume-scoring.md
 ```
 
-Watch it:
+Look for the process to:
 - Extract text from the PDF
 - Parse the resume sections
 - Apply each scoring category
 - Generate structured output with evidence
 
-### 3. Compare Results (2 min)
+### 3. Compare Results 
 Run on second resume:
 
 ```
@@ -81,7 +87,7 @@ Highlight:
 - Different scores, clear reasoning
 - Audit trail for each decision
 
-### 4. Batch Processing Demo (Optional, 2 min)
+### 4. Batch Processing Demo 
 
 Run the Python script to show how this scales:
 
@@ -89,15 +95,13 @@ Run the Python script to show how this scales:
 python screen_resumes.py
 ```
 
-This extracts text from all PDFs and prepares prompts for LLM processing.
+Extracts text from all PDFs and prepares prompts for LLM processing.
 
 ### 5. Discussion Points (2 min)
 - **Fairness**: Rubric applied consistently, no implicit bias
 - **Transparency**: Hiring committee can see exactly why scores differ
 - **Adjustability**: Client can modify weights (more emphasis on publications? Add it!)
 - **Scalability**: Run on 100 resumes overnight
-
-## Key Talking Points
 
 ### Why This Approach Works
 
