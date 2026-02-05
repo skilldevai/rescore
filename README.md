@@ -25,11 +25,11 @@ resume-screener/
 └── README.md                    # This file
 ```
 
-## Two Demo Options
+## Demo Options
 
-### Option 1: GitHub Copilot Agent Mode (Quick, 5 min)
+### Option 1: GitHub Copilot Agent Mode 
 
-Best for: Showing the concept of AI agents with minimal setup
+AI agents with minimal setup
 
 ```
 User prompt → Copilot reads AGENTS.md → Reads rubric → Extracts PDF → Scores
@@ -39,9 +39,9 @@ User prompt → Copilot reads AGENTS.md → Reads rubric → Extracts PDF → Sc
 2. Type: `@workspace Review and score sample-resumes/sarah-chen.pdf using skills/resume-scoring.md`
 3. Watch Copilot apply the rubric and generate evaluation
 
-### Option 2: Python Script (Production-Ready, 10 min)
+### Option 2: Python Script 
 
-Best for: Showing how to build a real automated pipeline
+Showing how to build a real automated pipeline
 
 ```
 screen_resumes.py → Extract PDF text → Call Claude API → Save evaluation report
@@ -103,34 +103,6 @@ Extracts text from all PDFs and prepares prompts for LLM processing.
 - **Adjustability**: Client can modify weights (more emphasis on publications? Add it!)
 - **Scalability**: Run on 100 resumes overnight
 
-### Why This Approach Works
-
-1. **No Training Data Needed**
-   - Works immediately with well-crafted prompts
-   - Compare to fine-tuning: weeks of data collection, cleaning, training
-
-2. **Handles Real PDF Resumes**
-   - Extracts text from actual PDF files candidates submit
-   - Works with varied formatting and layouts
-
-3. **Domain Expert Involvement**
-   - Scientists define what matters in `resume-scoring.md`
-   - AI applies criteria consistently
-
-4. **Audit & Compliance Ready**
-   - Every score has documented evidence
-   - Easy to demonstrate non-discrimination
-
-5. **Iterative Improvement**
-   - Hiring committee disagrees with a ranking? Adjust the rubric
-   - No model retraining needed
-
-### When to Consider Fine-Tuning Instead
-
-- Processing 10,000+ applications per year
-- Very specific pattern recognition needed
-- Historical hiring data is clean and unbiased (rare!)
-- Budget for ongoing model maintenance
 
 ## Technical Requirements
 
@@ -185,19 +157,17 @@ Options:
   --api-key, -k  Anthropic API key (or use ANTHROPIC_API_KEY env var)
 ```
 
-## Customization for Client
-
-To adapt for their specific needs:
+## Customization Options
 
 1. **Modify `skills/resume-scoring.md`**:
    - Adjust point weights
    - Add position-specific technical skills
-   - Include their specific research focus areas
+   - Include specific research focus areas
 
 2. **Update `AGENTS.md`**:
-   - Add their mission statement language
+   - Add mission statement language
    - Include specific ethical guidelines they follow
-   - Customize output format for their HR system
+   - Customize output format for HR system
 
 ## Cost Comparison
 
