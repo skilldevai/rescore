@@ -92,7 +92,7 @@ Highlight:
 Run the Python script to show how this scales:
 
 ```bash
-python screen_resumes.py
+python pipeline/screen_resumes.py
 ```
 
 Extracts text from all PDFs and prepares prompts for LLM processing.

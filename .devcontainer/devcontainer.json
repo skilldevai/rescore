@@ -44,5 +44,5 @@
             ]
         }
     },
-	"postCreateCommand": "pip install --user -r requirements.txt"
+	"postCreateCommand": "bash -i scripts/pysetup.sh py_env"
 }
