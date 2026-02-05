@@ -3,12 +3,12 @@
 A quick demonstration of using AI agents with GitHub Copilot for automated resume screening in biomedical research hiring.
 
 &emsp;&emsp;&emsp;&emsp;Click here ➡️ 
-<a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/openRepository?url=https://github.com/skilldevai/rescore">
+<a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/skilldevai/rescore">
   <img src="https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&style=for-the-badge"
        alt="Open in Dev Containers" height="48">    
 </a>     
 
-<br>
+ <br>
 
 ## Files Included
 
